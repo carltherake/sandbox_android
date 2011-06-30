@@ -1,12 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
-<TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/hello"
-    />
-</LinearLayout>
+<TextView
+	android:id="@+id/tvLocation"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="@string/txtLocEditBox"
+	/>
+<EditText
+	android:id="@+id/etLocation"
+	android:layout_height="wrap_content"
+	android:layout_width="fill_parent"
+	android:layout_below="@+id/tvLocation"
+	/>
+<TextView
+	android:id="@+id/tvTechnician"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="@string/txtTechEditBox"
+	android:layout_below="@+id/etLocation"
+	/>
+<EditText
+	android:id="@+id/etTech"
+	android:layout_height="wrap_content"
+	android:layout_width="fill_parent"
+	android:layout_below="@+id/tvTechnician"
+	/>
+<Button
+	android:text="Picture"
+	android:id="@+id/btnPicture"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_below="@+id/etTech"
+	/>
+<Button
+	android:text="Save"
+	android:id="@+id/btnSave"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_below="@+id/etTech"
+	android:layout_alignParentRight="true"
+	/>
+<ImageView
+	android:id="@+id/photo"
+	android:src="@drawable/icon"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_below="@+id/btnSave"
+	/>
+</RelativeLayout>

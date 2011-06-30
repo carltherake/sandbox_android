@@ -2,4 +2,9 @@
 <resources>
     <string name="hello">Hello World, sandbox!</string>
     <string name="app_name">Sandbox</string>
+    <string name="server">ftp.rimg.net</string>
+    <string name="username">Android</string>
+    <string name="password">4ndr01d</string>
+    <string name="txtLocEditBox">Enter Store Number:</string>
+    <string name="txtTechEditBox">Enter your name:</string>
 </resources>
